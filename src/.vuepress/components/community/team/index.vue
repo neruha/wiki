@@ -123,7 +123,7 @@ export default {
   },
 
   data: () => ({
-    emeriti,
+    //emeriti,
     geolocationSupported: false,
     errorGettingLocation: false,
     userPosition: null,
