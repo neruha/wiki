@@ -2,30 +2,27 @@
   <div>
     <div class="team">
       <h2 id="active-core-team-members">
-        アクティブなコアチームメンバー
-        <GetPositionButton
+        はと鯖を支えている運営チーム！
+        <!-- <GetPositionButton
           v-if="!userPosition"
           @positionRetrieved="setUserPosition"
           @positionErrored="setUserPositionError"
-        />
+        /> -->
       </h2>
 
-      <div v-if="errorGettingLocation" class="danger custom-block">
+      <!-- <div v-if="errorGettingLocation" class="danger custom-block">
         <p>Failed to get your location.</p>
-      </div>
+      </div> -->
 
-      <p>
-        Vueとそのエコシステムの開発は、国際的なチームによって進められており、そのうちの何人かは以下に紹介されています。
-      </p>
 
-      <div v-if="userPosition" class="tip custom-block">
+      <!-- <div v-if="userPosition" class="tip custom-block">
         <p>The core team have been sorted by their distance from you.</p>
-      </div>
+      </div> -->
 
       <VuerProfile v-for="profile in members" :key="profile.name" :profile="profile" :use-miles="useMiles"/>
     </div>
 
-    <div class="team">
+    <!-- <div class="team">
       <h2 id="core-team-emeriti">
         Core Team Emeriti
       </h2>
@@ -35,9 +32,9 @@
       </p>
 
       <VuerProfile v-for="profile in emeriti" :key="profile.name" :profile="profile" :use-miles="useMiles"/>
-    </div>
+    </div> -->
 
-    <div class="team">
+    <!-- <div class="team">
       <h2 id="community-partners">
         Community Partners
         <GetPositionButton
@@ -60,15 +57,15 @@
       </div>
 
       <VuerProfile v-for="profile in partners" :key="profile.name" :profile="profile" :use-miles="useMiles"/>
-    </div>
+    </div> -->
   </div>
 </template>
 
 <script>
 import { getDistanceFromLatLonInKm } from './utils'
 import members from './members'
-import emeriti from './emeriti'
-import partners from './partners'
+// import emeriti from './emeriti'
+// import partners from './partners'
 
 const imperialLanguageCodes = ['en-US', 'en-MY', 'en-MM', 'en-BU', 'en-LR', 'my', 'bu']
 

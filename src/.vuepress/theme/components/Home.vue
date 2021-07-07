@@ -10,7 +10,7 @@
           <h1
             v-if="data.heroText !== null"
             id="main-title"
-          >{{ data.heroText || $title || 'Vue.js' }}</h1>
+          >{{ data.heroText || $title || 'HATOSABA' }}</h1>
 
           <h2 class="tagline" v-if="tagline" v-html="tagline"></h2>
 
@@ -26,7 +26,7 @@
       </div>
     </header>
 
-    <SpecialSponsors :sponsors="sponsors.special_sponsors" />
+    <!-- <SpecialSponsors :sponsors="sponsors.special_sponsors" /> -->
 
     <section v-if="data.features && data.features.length" class="section-features">
       <div class="inner">
@@ -39,7 +39,7 @@
 
     <Content class="theme-default-content custom" />
 
-    <section class="section-sponsors" :class="{ active: sponsorsActive }" ref="sponsors">
+    <!-- <section class="section-sponsors" :class="{ active: sponsorsActive }" ref="sponsors">
       <div class="inner">
         <PatreonSponsors :sponsors="sponsors" />
         <OpenCollectiveSponsors />
@@ -48,7 +48,7 @@
 
     <section class="section-newsletter">
       <Newsletter />
-    </section>
+    </section> -->
 
     <footer class="main-footer">
       <p v-if="data.socialIcons">

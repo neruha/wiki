@@ -16,7 +16,9 @@
     </div>
 
     <div class="profile">
-      <h3 :data-official-title="profile.title">{{ getMinecraftUserName(profile.minecraft_uuid) }}</h3>
+      <h3 v-if="profile.minecraft_uuid":data-official-title="profile.title">{{ info }}</h3>
+      <h3 v-else-if="profile.name":data-official-title="profile.title">{{ profile.name }}</h3>
+      <div v-if="profile.description" :class="item-preview-description">{{profile.description}}</div>
       <dl>
         <template v-if="profile.reposOfficial">
           <dt>Core focus</dt>
@@ -101,6 +103,7 @@
           </dd>
         </template>
         <footer v-if="hasSocialLinks" class="social">
+          <SocialIcon type="YouTube" v-if="profile.youtube" :link="`https://www.youtube.com/channel/${profile.youtube}`"/>
           <SocialIcon type="GitHub" v-if="profile.github" :link="generateGithubUrl(profile.github)"/>
           <SocialIcon type="Twitter" v-if="profile.twitter" :link="`https://twitter.com/${profile.twitter}`"/>
           <SocialIcon type="CodePen" v-if="profile.codepen" :link="`https://codepen.io/${profile.codepen}`"/>
@@ -112,12 +115,31 @@
 </template>
 
 <script>
-import { minimizeLink, generateGithubUrl, getMinecraftUserName, kmToMi, roundDistance } from './utils'
+import { minimizeLink, generateGithubUrl, kmToMi, roundDistance } from './utils'
+import axios from "axios"
 
 export default {
   components: {
     VuerLanguage: () => import('./vuer-language'),
     SocialIcon: () => import('@theme/components/ui/SocialIcon.vue')
+  },
+
+  data () {
+    return {
+      info: null
+    }
+  },
+
+  mounted () {
+    const uuid = this.profile.minecraft_uuid
+
+    if(uuid) {
+      console.log(uuid)
+      axios
+      .get(`/mojang/${uuid}`)
+      .then(response => (this.info = response.data.name))
+    }
+    
   },
 
   props: {
@@ -162,14 +184,13 @@ export default {
     },
 
     hasSocialLinks () {
-      return this.profile.github || this.profile.twitter || this.profile.codepen || this.profile.linkedin
+      return this.profile.youtube || this.profile.github || this.profile.twitter || this.profile.codepen || this.profile.linkedin
     }
   },
 
   methods: {
     minimizeLink,
-    generateGithubUrl,
-    getMinecraftUserName
+    generateGithubUrl
   }
 }
 </script>
@@ -182,10 +203,11 @@ export default {
 
 .avatar {
   flex: 0 0 80px;
-
+  
   img {
+    filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.078039));
     border-radius: 50%;
-    object-fit: cover;
+    object-fit: cover; 
   }
 }
 
@@ -229,6 +251,7 @@ export default {
     content: '·';
     margin: 0 0.4em;
   }
+  
 }
 
 .social {

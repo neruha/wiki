@@ -1,244 +1,231 @@
 const sidebar = {
-  cookbook: [
-    {
-      title: 'Cookbook',
-      collapsable: false,
-      children: [
-        '/cookbook/',
-        '/cookbook/editable-svg-icons',
-        '/cookbook/debugging-in-vscode',
-        '/cookbook/automatic-global-registration-of-base-components'
-      ]
-    }
-  ],
+  // cookbook: [
+  //   {
+  //     title: 'Cookbook',
+  //     collapsable: false,
+  //     children: [
+  //       '/cookbook/',
+  //       '/cookbook/editable-svg-icons',
+  //       '/cookbook/debugging-in-vscode',
+  //       '/cookbook/automatic-global-registration-of-base-components'
+  //     ]
+  //   }
+  // ],
   guide: [
     {
-      title: 'Essentials',
+      title: '初めての方へ',
       collapsable: false,
       children: [
-        '/guide/installation',
         '/guide/introduction',
-        '/guide/instance',
-        '/guide/template-syntax',
-        '/guide/data-methods',
-        '/guide/computed',
-        '/guide/class-and-style',
-        '/guide/conditional',
-        '/guide/list',
-        '/guide/events',
-        '/guide/forms',
-        '/guide/component-basics'
       ]
     },
-    {
-      title: 'Components In-Depth',
-      collapsable: false,
-      children: [
-        '/guide/component-registration',
-        '/guide/component-props',
-        '/guide/component-attrs',
-        '/guide/component-custom-events',
-        '/guide/component-slots',
-        '/guide/component-provide-inject',
-        '/guide/component-dynamic-async',
-        '/guide/component-template-refs',
-        '/guide/component-edge-cases'
-      ]
-    },
-    {
-      title: 'Transitions & Animation',
-      collapsable: false,
-      children: [
-        '/guide/transitions-overview',
-        '/guide/transitions-enterleave',
-        '/guide/transitions-list',
-        '/guide/transitions-state'
-      ]
-    },
-    {
-      title: 'Reusability & Composition',
-      collapsable: false,
-      children: [
-        {
-          title: 'Composition API',
-          children: [
-            '/guide/composition-api-introduction',
-            '/guide/composition-api-setup',
-            '/guide/composition-api-lifecycle-hooks',
-            '/guide/composition-api-provide-inject',
-            '/guide/composition-api-template-refs'
-          ]
-        },
-        '/guide/mixins',
-        '/guide/custom-directive',
-        '/guide/teleport',
-        '/guide/render-function',
-        '/guide/plugins'
-      ]
-    },
-    {
-      title: 'Advanced Guides',
-      collapsable: false,
-      children: [
-        {
-          title: 'Reactivity',
-          children: [
-            '/guide/reactivity',
-            '/guide/reactivity-fundamentals',
-            '/guide/reactivity-computed-watchers'
-          ]
-        },
-        '/guide/optimizations',
-        '/guide/change-detection'
-      ]
-    },
-    {
-      title: 'Tooling',
-      collapsable: false,
-      children: [
-        '/guide/single-file-component',
-        '/guide/testing',
-        '/guide/typescript-support',
-        '/guide/mobile',
-        '/guide/tooling/deployment'
-      ]
-    },
-    {
-      title: 'Scaling Up',
-      collapsable: false,
-      children: ['/guide/routing', '/guide/state-management', '/guide/ssr', '/guide/security']
-    },
-    {
-      title: 'Accessibility',
-      collapsable: false,
-      children: [
-        '/guide/a11y-basics',
-        '/guide/a11y-semantics',
-        '/guide/a11y-standards',
-        '/guide/a11y-resources'
-      ]
-    }
+    // {
+    //   title: 'Components In-Depth',
+    //   collapsable: false,
+    //   children: [
+    //     '/guide/component-registration',
+    //     '/guide/component-props',
+    //     '/guide/component-attrs',
+    //     '/guide/component-custom-events',
+    //     '/guide/component-slots',
+    //     '/guide/component-provide-inject',
+    //     '/guide/component-dynamic-async',
+    //     '/guide/component-template-refs',
+    //     '/guide/component-edge-cases'
+    //   ]
+    // },
+    // {
+    //   title: 'Transitions & Animation',
+    //   collapsable: false,
+    //   children: [
+    //     '/guide/transitions-overview',
+    //     '/guide/transitions-enterleave',
+    //     '/guide/transitions-list',
+    //     '/guide/transitions-state'
+    //   ]
+    // },
+    // {
+    //   title: 'Reusability & Composition',
+    //   collapsable: false,
+    //   children: [
+    //     {
+    //       title: 'Composition API',
+    //       children: [
+    //         '/guide/composition-api-introduction',
+    //         '/guide/composition-api-setup',
+    //         '/guide/composition-api-lifecycle-hooks',
+    //         '/guide/composition-api-provide-inject',
+    //         '/guide/composition-api-template-refs'
+    //       ]
+    //     },
+    //     '/guide/mixins',
+    //     '/guide/custom-directive',
+    //     '/guide/teleport',
+    //     '/guide/render-function',
+    //     '/guide/plugins'
+    //   ]
+    // },
+    // {
+    //   title: 'Advanced Guides',
+    //   collapsable: false,
+    //   children: [
+    //     {
+    //       title: 'Reactivity',
+    //       children: [
+    //         '/guide/reactivity',
+    //         '/guide/reactivity-fundamentals',
+    //         '/guide/reactivity-computed-watchers'
+    //       ]
+    //     },
+    //     '/guide/optimizations',
+    //     '/guide/change-detection'
+    //   ]
+    // },
+    // {
+    //   title: 'Tooling',
+    //   collapsable: false,
+    //   children: [
+    //     '/guide/single-file-component',
+    //     '/guide/testing',
+    //     '/guide/typescript-support',
+    //     '/guide/mobile',
+    //     '/guide/tooling/deployment'
+    //   ]
+    // },
+    // {
+    //   title: 'Scaling Up',
+    //   collapsable: false,
+    //   children: ['/guide/routing', '/guide/state-management', '/guide/ssr', '/guide/security']
+    // },
+    // {
+    //   title: 'Accessibility',
+    //   collapsable: false,
+    //   children: [
+    //     '/guide/a11y-basics',
+    //     '/guide/a11y-semantics',
+    //     '/guide/a11y-standards',
+    //     '/guide/a11y-resources'
+    //   ]
+    // }
   ],
-  api: [
-    '/api/application-config',
-    '/api/application-api',
-    '/api/global-api',
-    {
-      title: 'Options',
-      path: '/api/options-api',
-      collapsable: false,
-      children: [
-        '/api/options-data',
-        '/api/options-dom',
-        '/api/options-lifecycle-hooks',
-        '/api/options-assets',
-        '/api/options-composition',
-        '/api/options-misc'
-      ]
-    },
-    '/api/instance-properties',
-    '/api/instance-methods',
-    '/api/directives',
-    '/api/special-attributes',
-    '/api/built-in-components.md',
-    {
-      title: 'Reactivity API',
-      path: '/api/reactivity-api',
-      collapsable: false,
-      children: [
-        '/api/basic-reactivity',
-        '/api/refs-api',
-        '/api/computed-watch-api'
-      ]
-    },
-    '/api/composition-api'
-  ],
-  examples: [
-    {
-      title: 'Examples',
-      collapsable: false,
-      children: [
-        '/examples/markdown',
-        '/examples/commits',
-        '/examples/grid-component',
-        '/examples/tree-view',
-        '/examples/svg',
-        '/examples/modal',
-        '/examples/elastic-header',
-        '/examples/select2',
-        '/examples/todomvc'
-      ]
-    }
-  ],
-  migration: [
-    '/guide/migration/introduction',
-    '/guide/migration/migration-build',
-    {
-      title: 'Details',
-      collapsable: false,
-      children: [
-        '/guide/migration/array-refs',
-        '/guide/migration/async-components',
-        '/guide/migration/attribute-coercion',
-        '/guide/migration/attrs-includes-class-style',
-        '/guide/migration/children',
-        '/guide/migration/custom-directives',
-        '/guide/migration/custom-elements-interop',
-        '/guide/migration/data-option',
-        '/guide/migration/emits-option',
-        '/guide/migration/events-api',
-        '/guide/migration/filters',
-        '/guide/migration/fragments',
-        '/guide/migration/functional-components',
-        '/guide/migration/global-api',
-        '/guide/migration/global-api-treeshaking',
-        '/guide/migration/inline-template-attribute',
-        '/guide/migration/key-attribute',
-        '/guide/migration/keycode-modifiers',
-        '/guide/migration/listeners-removed',
-        '/guide/migration/mount-changes',
-        '/guide/migration/props-data',
-        '/guide/migration/props-default-this',
-        '/guide/migration/render-function-api',
-        '/guide/migration/slots-unification',
-        '/guide/migration/suspense',
-        '/guide/migration/transition',
-        '/guide/migration/transition-as-root',
-        '/guide/migration/transition-group',
-        '/guide/migration/v-on-native-modifier-removed',
-        '/guide/migration/v-model',
-        '/guide/migration/v-if-v-for',
-        '/guide/migration/v-bind',
-        '/guide/migration/vnode-lifecycle-events',
-        '/guide/migration/watch'
-      ]
-    }
-  ],
-  ssr: [
-    ['/guide/ssr/introduction', 'Introduction'],
-    '/guide/ssr/getting-started',
-    '/guide/ssr/universal',
-    '/guide/ssr/structure',
-    '/guide/ssr/build-config',
-    '/guide/ssr/server',
-    '/guide/ssr/routing',
-    '/guide/ssr/hydration'
-  ],
+  // api: [
+  //   '/api/application-config',
+  //   '/api/application-api',
+  //   '/api/global-api',
+  //   {
+  //     title: 'Options',
+  //     path: '/api/options-api',
+  //     collapsable: false,
+  //     children: [
+  //       '/api/options-data',
+  //       '/api/options-dom',
+  //       '/api/options-lifecycle-hooks',
+  //       '/api/options-assets',
+  //       '/api/options-composition',
+  //       '/api/options-misc'
+  //     ]
+  //   },
+  //   '/api/instance-properties',
+  //   '/api/instance-methods',
+  //   '/api/directives',
+  //   '/api/special-attributes',
+  //   '/api/built-in-components.md',
+  //   {
+  //     title: 'Reactivity API',
+  //     path: '/api/reactivity-api',
+  //     collapsable: false,
+  //     children: [
+  //       '/api/basic-reactivity',
+  //       '/api/refs-api',
+  //       '/api/computed-watch-api'
+  //     ]
+  //   },
+  //   '/api/composition-api'
+  // ],
+  // examples: [
+  //   {
+  //     title: 'Examples',
+  //     collapsable: false,
+  //     children: [
+  //       '/examples/markdown',
+  //       '/examples/commits',
+  //       '/examples/grid-component',
+  //       '/examples/tree-view',
+  //       '/examples/svg',
+  //       '/examples/modal',
+  //       '/examples/elastic-header',
+  //       '/examples/select2',
+  //       '/examples/todomvc'
+  //     ]
+  //   }
+  // ],
+  // migration: [
+  //   '/guide/migration/introduction',
+  //   '/guide/migration/migration-build',
+  //   {
+  //     title: 'Details',
+  //     collapsable: false,
+  //     children: [
+  //       '/guide/migration/array-refs',
+  //       '/guide/migration/async-components',
+  //       '/guide/migration/attribute-coercion',
+  //       '/guide/migration/attrs-includes-class-style',
+  //       '/guide/migration/children',
+  //       '/guide/migration/custom-directives',
+  //       '/guide/migration/custom-elements-interop',
+  //       '/guide/migration/data-option',
+  //       '/guide/migration/emits-option',
+  //       '/guide/migration/events-api',
+  //       '/guide/migration/filters',
+  //       '/guide/migration/fragments',
+  //       '/guide/migration/functional-components',
+  //       '/guide/migration/global-api',
+  //       '/guide/migration/global-api-treeshaking',
+  //       '/guide/migration/inline-template-attribute',
+  //       '/guide/migration/key-attribute',
+  //       '/guide/migration/keycode-modifiers',
+  //       '/guide/migration/listeners-removed',
+  //       '/guide/migration/mount-changes',
+  //       '/guide/migration/props-data',
+  //       '/guide/migration/props-default-this',
+  //       '/guide/migration/render-function-api',
+  //       '/guide/migration/slots-unification',
+  //       '/guide/migration/suspense',
+  //       '/guide/migration/transition',
+  //       '/guide/migration/transition-as-root',
+  //       '/guide/migration/transition-group',
+  //       '/guide/migration/v-on-native-modifier-removed',
+  //       '/guide/migration/v-model',
+  //       '/guide/migration/v-if-v-for',
+  //       '/guide/migration/v-bind',
+  //       '/guide/migration/vnode-lifecycle-events',
+  //       '/guide/migration/watch'
+  //     ]
+  //   }
+  // ],
+  // ssr: [
+  //   ['/guide/ssr/introduction', 'Introduction'],
+  //   '/guide/ssr/getting-started',
+  //   '/guide/ssr/universal',
+  //   '/guide/ssr/structure',
+  //   '/guide/ssr/build-config',
+  //   '/guide/ssr/server',
+  //   '/guide/ssr/routing',
+  //   '/guide/ssr/hydration'
+  // ],
   contributing: [
     {
       title: 'Contribute to the Docs',
       collapsable: false,
       children: [
-        '/guide/contributing/writing-guide',
-        '/guide/contributing/doc-style-guide',
-        '/guide/contributing/translations'
+        '/guide/contributing/doc-style-guide'
       ]
     }
   ]
 }
 
 module.exports = {
-  title: 'はと鯖',
+  title: 'はと鯖　公式wikiサイト',
   description: 'はと鯖 - みんなの「楽しい」を提供しませんか',
   head: [
     [
@@ -261,7 +248,7 @@ module.exports = {
       'link',
       {
         rel: 'icon',
-        href: '/logo.png'
+        href: 'https://crafatar.com/renders/head/6b80409a32964d6e8614da041c5ec185'
       }
     ],
     ['link', { rel: 'manifest', href: '/manifest.json' }],
@@ -301,174 +288,76 @@ module.exports = {
     ]
   ],
   themeConfig: {
-    logo: '/logo.png',
+    //logo: '/logo.png',
     nav: [
       {
-        text: 'Docs',
+        text: 'トップ',
         ariaLabel: 'Documentation Menu',
         items: [
           {
-            text: 'Guide',
+            text: 'ガイド',
             link: '/guide/introduction'
           },
           {
-            text: 'Style Guide',
+            text: 'ルール',
             link: '/style-guide/'
           },
           {
-            text: 'Cookbook',
-            link: '/cookbook/'
-          },
-          {
-            text: 'Examples',
-            link: '/examples/markdown'
-          },
-          {
-            text: 'Contribute',
-            link: '/guide/contributing/writing-guide'
-          },
-          {
-            text: 'Migration from Vue 2',
-            link: '/guide/migration/introduction'
+            text: 'コントリビュート',
+            link: '/guide/contributing/doc-style-guide'
           }
         ]
       },
       {
-        text: 'API Reference',
-        link: '/api/'
+        text: 'お初さんはこちら！',
+        link: '/guide/introduction'
       },
       {
-        text: 'Ecosystem',
-        items: [
-          {
-            text: 'Community',
-            ariaLabel: 'Community Menu',
-            items: [
-              {
-                text: 'Team',
-                link: '/community/team/'
-              },
-              {
-                text: 'Partners',
-                link: '/community/partners'
-              },
-              {
-                text: 'Join',
-                link: '/community/join/'
-              },
-              {
-                text: 'Themes',
-                link: '/community/themes/'
-              }
-            ]
-          },
-          {
-            text: 'Official Projects',
-            items: [
-              {
-                text: 'Vue Router',
-                link: 'https://next.router.vuejs.org/'
-              },
-              {
-                text: 'Vuex',
-                link: 'https://next.vuex.vuejs.org/'
-              },
-              {
-                text: 'Vue CLI',
-                link: 'https://cli.vuejs.org/'
-              },
-              {
-                text: 'Vue Test Utils',
-                link:
-                  'https://next.vue-test-utils.vuejs.org/guide/'
-              },
-              {
-                text: 'Devtools',
-                link: 'https://devtools.vuejs.org'
-              },
-              {
-                text: 'Weekly news',
-                link: 'https://news.vuejs.org/'
-              },
-              {
-                text: 'Blog',
-                link: 'https://blog.vuejs.org/'
-              }
-            ]
-          }
-        ]
+        text: 'ルール',
+        link: '/rules/'
       },
       {
-        text: 'Support Vue',
-        link: '/support-vuejs/',
-        items: [
-          {
-            text: 'One-time Donations',
-            link: '/support-vuejs/#one-time-donations'
-          },
-          {
-            text: 'Recurring Pledges',
-            link: '/support-vuejs/#recurring-pledges'
-          },
-          {
-            text: 'T-Shirt Shop',
-            link: 'https://vue.threadless.com/'
-          }
-        ]
+        text: '運営チーム',
+        link: '/community/team/'
       },
       {
-        text: 'Translations',
-        link: '#',
+        text: 'サーバー',
+        ariaLabel: 'マインクラフトのサーバー',
         items: [
-          // Translation maintainers: Please include the link below to the English documentation
-          // {
-          //   text: 'English',
-          //   link: 'https://v3.vuejs.org/',
-          //   isTranslation: true
-          // },
           {
-            text: '中文',
-            link: 'https://v3.cn.vuejs.org/',
-            isTranslation: true
+            text: '生活鯖',
+            link: '/server/seikatsu'
           },
           {
-            text: '한국어',
-            link: 'https://v3.ko.vuejs.org/',
-            isTranslation: true
+            text: 'ライフ鯖',
+            link: '/server/life'
           },
           {
-            text: '日本語',
-            link: 'https://v3.ja.vuejs.org/',
-            isTranslation: true
+            text: 'ミニゲーム鯖',
+            link: '/server/minigame'
           },
           {
-            text: 'Русский',
-            link: 'https://v3.ru.vuejs.org/ru/',
-            isTranslation: true
+            text: 'RTM鯖',
+            link: '/server/rtm'
           },
           {
-            text: 'More Translations',
-            link: '/guide/contributing/translations#community-translations'
+            text: '青鬼ごっこ鯖',
+            link: '/server/aooni'
           }
         ]
       }
     ],
     repo: 'vuejs/docs',
-    editLinks: false,
-    editLinkText: 'Edit this on GitHub!',
-    lastUpdated: 'Last updated',
+    editLinks: true,
+    editLinkText: 'GitHubで編集する!',
+    lastUpdated: '最終更新日',
     docsDir: 'src',
     sidebarDepth: 2,
     sidebar: {
       collapsable: false,
-      '/guide/migration/': sidebar.migration,
       '/guide/contributing/': sidebar.contributing,
-      '/guide/ssr/': sidebar.ssr,
       '/guide/': sidebar.guide,
-      '/community/': sidebar.guide,
-      '/cookbook/': sidebar.cookbook,
-      '/api/': sidebar.api,
-      '/examples/': sidebar.examples
+      '/community/': sidebar.guide
     },
     smoothScroll: false,
     algolia: {
@@ -476,12 +365,22 @@ module.exports = {
       appId: 'BH4D9OD16A',
       apiKey: 'bc6e8acb44ed4179c30d0a45d6140d3f'
     },
-    carbonAds: {
-      carbon: 'CEBDT27Y',
-      custom: 'CKYD62QM',
-      placement: 'vuejsorg'
-    },
+    // carbonAds: {
+    //   carbon: 'CEBDT27Y',
+    //   custom: 'CKYD62QM',
+    //   placement: 'vuejsorg'
+    // },
     topBanner: false
+  },
+  runtimeCompiler: true,
+  devServer: {
+    proxy: {
+      '/mojang/': {
+        target: "https://sessionserver.mojang.com/session/minecraft/profile/",
+        changeOrigin: true,
+        pathRewrite: {'^/mojang/': ''},
+      }
+    }
   },
   plugins: [
     [

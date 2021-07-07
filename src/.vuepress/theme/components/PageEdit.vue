@@ -5,7 +5,7 @@
         Deployed on
         <a href="https://url.netlify.com/HJ8X2mxP8">Netlify</a>.
         <span v-if="editLink" class="edit-link">
-          Caught a mistake or want to contribute to the documentation?
+          間違いを発見したり、ウィキに貢献したいとお考えですか？
           <a
             :href="editLink"
             target="_blank"

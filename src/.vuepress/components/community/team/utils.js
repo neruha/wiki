@@ -1,4 +1,5 @@
 import axios from "axios"
+import { resolve } from "q"
 export const minimizeLink = link => {
   return link
     .replace(/^https?:\/\/(www\.)?/, '')
@@ -16,26 +17,9 @@ export const generateGithubUrl = (handle, repo) => {
     // In such a case, we discard the (personal) handle.
     return `https://github.com/${repo.replace(/\/\*$/, '')}`
   }
-
-  
   return `https://github.com/${handle}/${repo || ''}`
 }
-
-export const getMinecraftUserName = (handle) => {
-
-  axios.get(`https://sessionserver.mojang.com/session/minecraft/profile/${handle}`)
-  .then(function (response) {
-    return response.data.name
-    console.log(response);
-  })
-  .catch(function (error) {
-    // handle error
-    console.log(error);
-  })
-
-  return "none"
-}
-
+  
 export const getPreferredLanguageCode = () => {
   const nav = window.navigator
 
