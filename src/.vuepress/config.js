@@ -375,7 +375,7 @@ module.exports = {
   runtimeCompiler: true,
   devServer: {
     proxy: {
-      '/mojang/': {
+      '^/mojang/': {
         target: "https://sessionserver.mojang.com/session/minecraft/profile/",
         changeOrigin: true,
         pathRewrite: {'^/mojang/': ''},

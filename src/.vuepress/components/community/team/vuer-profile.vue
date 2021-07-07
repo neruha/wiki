@@ -134,7 +134,6 @@ export default {
     const uuid = this.profile.minecraft_uuid
 
     if(uuid) {
-      console.log(uuid)
       axios
       .get(`/mojang/${uuid}`)
       .then(response => (this.info = response.data.name))
