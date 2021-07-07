@@ -13,6 +13,9 @@
 [[redirects]]
   from = "/mojang/"
   to = "https://sessionserver.mojang.com/session/minecraft/profile/"
+  status = 200
+  force = true
+  headers = {X-From = "Netlify"}
 
 [build]
   command = "npm run build"
