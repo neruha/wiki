@@ -11,7 +11,7 @@
   to = "/guide/contributing/writing-guide.html"
 
 [[redirects]]
-  from = "/mojang/"
+  from = "/mojang/*"
   to = "https://sessionserver.mojang.com/session/minecraft/profile/"
   status = 200
   force = true
