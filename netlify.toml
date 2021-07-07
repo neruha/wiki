@@ -12,7 +12,7 @@
 
 [[redirects]]
   from = "/mojang/*"
-  to = "https://sessionserver.mojang.com/session/minecraft/profile/"
+  to = "https://sessionserver.mojang.com/session/minecraft/profile"
   status = 200
   force = true
   headers = {X-From = "Netlify"}
