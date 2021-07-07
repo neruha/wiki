@@ -10,6 +10,10 @@
   from = "/guide/writing-guide.html"
   to = "/guide/contributing/writing-guide.html"
 
+[[redirects]]
+  from = "/mojang/"
+  to = "https://sessionserver.mojang.com/session/minecraft/profile/"
+
 [build]
   command = "npm run build"
   publish = "src/.vuepress/dist"
