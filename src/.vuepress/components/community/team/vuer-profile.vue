@@ -18,7 +18,7 @@
     <div class="profile">
       <h3 v-if="profile.minecraft_uuid" :data-official-title="profile.title">{{ info }}</h3>
       <h3 v-else-if="profile.name" :data-official-title="profile.title">{{ profile.name }}</h3>
-      <div v-if="profile.description" :class="item-preview-description">{{profile.description}}</div>
+      <div v-if="profile.description">{{profile.description}}</div>
       <dl>
         <template v-if="profile.reposOfficial">
           <dt>Core focus</dt>
@@ -137,6 +137,7 @@ export default {
       axios
       .get(`/mojang?uuid=${uuid}`)
       .then(response => (this.info = response.data.name))
+      .catch(this.info = this.profile.name);
     }
     
   },

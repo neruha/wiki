@@ -26,8 +26,6 @@
       </div>
     </header>
 
-    <!-- <SpecialSponsors :sponsors="sponsors.special_sponsors" /> -->
-
     <section v-if="data.features && data.features.length" class="section-features">
       <div class="inner">
         <div v-for="(feature, index) in data.features" :key="index" class="feature">
@@ -39,14 +37,7 @@
 
     <Content class="theme-default-content custom" />
 
-    <!-- <section class="section-sponsors" :class="{ active: sponsorsActive }" ref="sponsors">
-      <div class="inner">
-        <PatreonSponsors :sponsors="sponsors" />
-        <OpenCollectiveSponsors />
-      </div>
-    </section>
-
-    <section class="section-newsletter">
+    <!-- <section class="section-newsletter">
       <Newsletter />
     </section> -->
 
@@ -66,28 +57,21 @@
 </template>
 
 <script>
-import sponsors from '@theme/data/patreon-sponsors.js'
 import HomeActionLink from '@theme/components/ui/HomeActionLink.vue'
 import SocialIcon from '@theme/components/ui/SocialIcon.vue'
-import SpecialSponsors from '@theme/components/sponsors/SpecialSponsors.vue'
-import PatreonSponsors from '@theme/components/sponsors/PatreonSponsors.vue'
-import OpenCollectiveSponsors from '@theme/components/sponsors/OpenCollectiveSponsors.vue'
 import Newsletter from '@theme/components/Newsletter.vue'
 
 export default {
   components: {
     HomeActionLink,
     SocialIcon,
-    SpecialSponsors,
-    PatreonSponsors,
-    OpenCollectiveSponsors,
     Newsletter
   },
 
-  data: () => ({
-    sponsors,
-    sponsorsActive: false
-  }),
+  // data: () => ({
+  //   sponsors,
+  //   sponsorsActive: false
+  // }),
 
   computed: {
     data() {
