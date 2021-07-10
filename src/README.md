@@ -6,7 +6,6 @@ tagline: みんなの<br>「楽しい」を提供しませんか
 actionButtons:
   - text: hato鯖ってなんなのさ?
     link: /
-    # extraClass: vuemastery-trigger primary
     icon: fa fa-play-circle
   - text: 参加する！
     link: /guide/introduction
@@ -31,5 +30,3 @@ socialIcons:
   - type: Twitter
     link: https://twitter.com/hatoiroiro
 ---
-
-<common-vuemastery-video-modal/>

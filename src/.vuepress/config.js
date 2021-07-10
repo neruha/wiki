@@ -1,16 +1,4 @@
 const sidebar = {
-  // cookbook: [
-  //   {
-  //     title: 'Cookbook',
-  //     collapsable: false,
-  //     children: [
-  //       '/cookbook/',
-  //       '/cookbook/editable-svg-icons',
-  //       '/cookbook/debugging-in-vscode',
-  //       '/cookbook/automatic-global-registration-of-base-components'
-  //     ]
-  //   }
-  // ],
   guide: [
     {
       title: '初めての方へ',
@@ -18,201 +6,8 @@ const sidebar = {
       children: [
         '/guide/introduction',
       ]
-    },
-    // {
-    //   title: 'Components In-Depth',
-    //   collapsable: false,
-    //   children: [
-    //     '/guide/component-registration',
-    //     '/guide/component-props',
-    //     '/guide/component-attrs',
-    //     '/guide/component-custom-events',
-    //     '/guide/component-slots',
-    //     '/guide/component-provide-inject',
-    //     '/guide/component-dynamic-async',
-    //     '/guide/component-template-refs',
-    //     '/guide/component-edge-cases'
-    //   ]
-    // },
-    // {
-    //   title: 'Transitions & Animation',
-    //   collapsable: false,
-    //   children: [
-    //     '/guide/transitions-overview',
-    //     '/guide/transitions-enterleave',
-    //     '/guide/transitions-list',
-    //     '/guide/transitions-state'
-    //   ]
-    // },
-    // {
-    //   title: 'Reusability & Composition',
-    //   collapsable: false,
-    //   children: [
-    //     {
-    //       title: 'Composition API',
-    //       children: [
-    //         '/guide/composition-api-introduction',
-    //         '/guide/composition-api-setup',
-    //         '/guide/composition-api-lifecycle-hooks',
-    //         '/guide/composition-api-provide-inject',
-    //         '/guide/composition-api-template-refs'
-    //       ]
-    //     },
-    //     '/guide/mixins',
-    //     '/guide/custom-directive',
-    //     '/guide/teleport',
-    //     '/guide/render-function',
-    //     '/guide/plugins'
-    //   ]
-    // },
-    // {
-    //   title: 'Advanced Guides',
-    //   collapsable: false,
-    //   children: [
-    //     {
-    //       title: 'Reactivity',
-    //       children: [
-    //         '/guide/reactivity',
-    //         '/guide/reactivity-fundamentals',
-    //         '/guide/reactivity-computed-watchers'
-    //       ]
-    //     },
-    //     '/guide/optimizations',
-    //     '/guide/change-detection'
-    //   ]
-    // },
-    // {
-    //   title: 'Tooling',
-    //   collapsable: false,
-    //   children: [
-    //     '/guide/single-file-component',
-    //     '/guide/testing',
-    //     '/guide/typescript-support',
-    //     '/guide/mobile',
-    //     '/guide/tooling/deployment'
-    //   ]
-    // },
-    // {
-    //   title: 'Scaling Up',
-    //   collapsable: false,
-    //   children: ['/guide/routing', '/guide/state-management', '/guide/ssr', '/guide/security']
-    // },
-    // {
-    //   title: 'Accessibility',
-    //   collapsable: false,
-    //   children: [
-    //     '/guide/a11y-basics',
-    //     '/guide/a11y-semantics',
-    //     '/guide/a11y-standards',
-    //     '/guide/a11y-resources'
-    //   ]
-    // }
+    }
   ],
-  // api: [
-  //   '/api/application-config',
-  //   '/api/application-api',
-  //   '/api/global-api',
-  //   {
-  //     title: 'Options',
-  //     path: '/api/options-api',
-  //     collapsable: false,
-  //     children: [
-  //       '/api/options-data',
-  //       '/api/options-dom',
-  //       '/api/options-lifecycle-hooks',
-  //       '/api/options-assets',
-  //       '/api/options-composition',
-  //       '/api/options-misc'
-  //     ]
-  //   },
-  //   '/api/instance-properties',
-  //   '/api/instance-methods',
-  //   '/api/directives',
-  //   '/api/special-attributes',
-  //   '/api/built-in-components.md',
-  //   {
-  //     title: 'Reactivity API',
-  //     path: '/api/reactivity-api',
-  //     collapsable: false,
-  //     children: [
-  //       '/api/basic-reactivity',
-  //       '/api/refs-api',
-  //       '/api/computed-watch-api'
-  //     ]
-  //   },
-  //   '/api/composition-api'
-  // ],
-  // examples: [
-  //   {
-  //     title: 'Examples',
-  //     collapsable: false,
-  //     children: [
-  //       '/examples/markdown',
-  //       '/examples/commits',
-  //       '/examples/grid-component',
-  //       '/examples/tree-view',
-  //       '/examples/svg',
-  //       '/examples/modal',
-  //       '/examples/elastic-header',
-  //       '/examples/select2',
-  //       '/examples/todomvc'
-  //     ]
-  //   }
-  // ],
-  // migration: [
-  //   '/guide/migration/introduction',
-  //   '/guide/migration/migration-build',
-  //   {
-  //     title: 'Details',
-  //     collapsable: false,
-  //     children: [
-  //       '/guide/migration/array-refs',
-  //       '/guide/migration/async-components',
-  //       '/guide/migration/attribute-coercion',
-  //       '/guide/migration/attrs-includes-class-style',
-  //       '/guide/migration/children',
-  //       '/guide/migration/custom-directives',
-  //       '/guide/migration/custom-elements-interop',
-  //       '/guide/migration/data-option',
-  //       '/guide/migration/emits-option',
-  //       '/guide/migration/events-api',
-  //       '/guide/migration/filters',
-  //       '/guide/migration/fragments',
-  //       '/guide/migration/functional-components',
-  //       '/guide/migration/global-api',
-  //       '/guide/migration/global-api-treeshaking',
-  //       '/guide/migration/inline-template-attribute',
-  //       '/guide/migration/key-attribute',
-  //       '/guide/migration/keycode-modifiers',
-  //       '/guide/migration/listeners-removed',
-  //       '/guide/migration/mount-changes',
-  //       '/guide/migration/props-data',
-  //       '/guide/migration/props-default-this',
-  //       '/guide/migration/render-function-api',
-  //       '/guide/migration/slots-unification',
-  //       '/guide/migration/suspense',
-  //       '/guide/migration/transition',
-  //       '/guide/migration/transition-as-root',
-  //       '/guide/migration/transition-group',
-  //       '/guide/migration/v-on-native-modifier-removed',
-  //       '/guide/migration/v-model',
-  //       '/guide/migration/v-if-v-for',
-  //       '/guide/migration/v-bind',
-  //       '/guide/migration/vnode-lifecycle-events',
-  //       '/guide/migration/watch'
-  //     ]
-  //   }
-  // ],
-  // ssr: [
-  //   ['/guide/ssr/introduction', 'Introduction'],
-  //   '/guide/ssr/getting-started',
-  //   '/guide/ssr/universal',
-  //   '/guide/ssr/structure',
-  //   '/guide/ssr/build-config',
-  //   '/guide/ssr/server',
-  //   '/guide/ssr/routing',
-  //   '/guide/ssr/hydration'
-  // ],
   contributing: [
     {
       title: 'Contribute to the Docs',
@@ -225,8 +20,9 @@ const sidebar = {
 }
 
 module.exports = {
-  title: 'はと鯖　公式wikiサイト',
+  title: 'はと鯖　公式ウィキサイト',
   description: 'はと鯖 - みんなの「楽しい」を提供しませんか',
+  lang: 'ja-jp',
   head: [
     [
       'link',
@@ -252,7 +48,6 @@ module.exports = {
       }
     ],
     ['link', { rel: 'manifest', href: '/manifest.json' }],
-    ['meta', { name: 'theme-color', content: '#3eaf7c' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     [
       'meta',
@@ -262,14 +57,14 @@ module.exports = {
       'link',
       {
         rel: 'apple-touch-icon',
-        href: '/images/icons/apple-icon-152x152.png'
+        //href: '/images/icons/apple-icon-152x152.png'
       }
     ],
     [
       'meta',
       {
         name: 'msapplication-TileImage',
-        content: '/images/icons/ms-icon-144x144.png'
+        //content: '/images/icons/ms-icon-144x144.png'
       }
     ],
     ['meta', { name: 'msapplication-TileColor', content: '#000000' }],
@@ -309,19 +104,11 @@ module.exports = {
         ]
       },
       {
-        text: 'お初さんはこちら！',
-        link: '/guide/introduction'
-      },
-      {
         text: 'ルール',
         link: '/rules/'
       },
       {
-        text: '運営チーム',
-        link: '/community/team/'
-      },
-      {
-        text: 'サーバー',
+        text: 'サーバーについて',
         ariaLabel: 'マインクラフトのサーバー',
         items: [
           {
@@ -345,9 +132,18 @@ module.exports = {
             link: '/server/aooni'
           }
         ]
+      },
+      {
+        text: '運営チーム',
+        link: '/community/team/'
+      },
+      {
+        text: 'はと鯖を支援する！',
+        link: '/guide/introduction'
       }
     ],
-    repo: 'vuejs/docs',
+    repo: 'Elic0de/hatowiki',
+    docsBranch: 'main',
     editLinks: true,
     editLinkText: 'GitHubで編集する!',
     lastUpdated: '最終更新日',
@@ -356,8 +152,7 @@ module.exports = {
     sidebar: {
       collapsable: false,
       '/guide/contributing/': sidebar.contributing,
-      '/guide/': sidebar.guide,
-      '/community/': sidebar.guide
+      '/guide/': sidebar.guide
     },
     smoothScroll: false,
     algolia: {
@@ -376,13 +171,19 @@ module.exports = {
   devServer: {
     proxy: {
       '/mojang/': {
-        target: "https://sessionserver.mojang.com/session/minecraft/profile/",
+        target: "https://sessionserver.mojang.com/session/minecraft/profile",
         changeOrigin: true,
         pathRewrite: {'^/mojang/': ''},
       }
     }
   },
   plugins: [
+    [
+      '@vuepress/google-analytics',
+      {
+        'ga': 'GTM-TL3D6H6'
+      }
+    ],
     [
       '@vuepress/last-updated',
       {
@@ -404,8 +205,8 @@ module.exports = {
         serviceWorker: true,
         updatePopup: {
           '/': {
-            message: 'New content is available.',
-            buttonText: 'Refresh'
+            message: '新しいコンテンツがあります。',
+            buttonText: '更新する'
           }
         }
       }

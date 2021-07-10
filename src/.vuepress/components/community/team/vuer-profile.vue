@@ -16,17 +16,17 @@
     </div>
 
     <div class="profile">
-      <h3 v-if="profile.minecraft_uuid":data-official-title="profile.title">{{ info }}</h3>
-      <h3 v-else-if="profile.name":data-official-title="profile.title">{{ profile.name }}</h3>
+      <h3 v-if="profile.minecraft_uuid" :data-official-title="profile.title">{{ info }}</h3>
+      <h3 v-else-if="profile.name" :data-official-title="profile.title">{{ profile.name }}</h3>
       <div v-if="profile.description" :class="item-preview-description">{{profile.description}}</div>
       <dl>
         <template v-if="profile.reposOfficial">
           <dt>Core focus</dt>
           <dd>
             <ul>
-              <li v-for="repo in profile.reposOfficial">
+              <!-- <li v-for="repo in profile.reposOfficial">
                 <a :href="generateGithubUrl('vuejs', repo)" target=_blank>{{ repo.name || repo }}</a>
-              </li>
+              </li> -->
             </ul>
           </dd>
         </template>
@@ -34,9 +34,9 @@
           <dt>エコ</dt>
           <dd>
             <ul>
-              <li v-for="repo in profile.reposPersonal">
+              <!-- <li v-for="repo in profile.reposPersonal">
                 <a :href="generateGithubUrl(profile.github, repo)" target=_blank>{{ repo.name || repo }}</a>
-              </li>
+              </li> -->
             </ul>
           </dd>
         </template>
@@ -96,9 +96,9 @@
           </dt>
           <dd>
             <ul>
-              <li v-for="link in profile.links">
+              <!-- <li v-for="link in profile.links">
                 <a :href="link" target=_blank>{{ minimizeLink(link) }}</a>
-              </li>
+              </li> -->
             </ul>
           </dd>
         </template>

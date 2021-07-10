@@ -4,15 +4,15 @@
       <h1>404</h1>
 
       <blockquote>
-        <p>Whoops! This page doesn't exist.</p>
+        <p>おっと！？このページは存在しません。</p>
       </blockquote>
 
       <p v-show="isTranslation">
-        New pages are added to the documentation all the time. This page might not be included in all of the translations yet.
+        ドキュメントには常に新しいページが追加されています。このページはまだすべての翻訳に含まれていないかもしれません。
       </p>
 
       <RouterLink to="/">
-        Take me home.
+        ホームにもどる
       </RouterLink>
     </div>
   </div>
