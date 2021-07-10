@@ -135,7 +135,7 @@ export default {
 
     if(uuid) {
       axios
-      .get(`/mojang/${uuid}`)
+      .get(`/mojang?uuid=${uuid}`)
       .then(response => (this.info = response.data.name))
     }
     

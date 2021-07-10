@@ -11,12 +11,12 @@
   to = "/guide/contributing/writing-guide.html"
 
 [[redirects]]
-  from = "/mojang/*"
-  to = "https://sessionserver.mojang.com/session/minecraft/profile"
+  from = "/mojang"
+  to = "https://sessionserver.mojang.com/session/minecraft/profile/:uuid"
   status = 200
   force = true
   headers = {X-From = "Netlify"}
-
+  query = {uuid = ":uuid"}
 [build]
   command = "npm run build"
   publish = "src/.vuepress/dist"
