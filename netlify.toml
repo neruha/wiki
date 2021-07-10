@@ -17,6 +17,7 @@
   force = true
   headers = {X-From = "Netlify"}
   query = {uuid = ":uuid"}
+  
 [build]
   command = "npm run build"
   publish = "src/.vuepress/dist"
