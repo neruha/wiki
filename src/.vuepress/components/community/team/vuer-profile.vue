@@ -107,6 +107,7 @@
           <SocialIcon type="GitHub" v-if="profile.github" :link="generateGithubUrl(profile.github)"/>
           <SocialIcon type="Twitter" v-if="profile.twitter" :link="`https://twitter.com/${profile.twitter}`"/>
           <SocialIcon type="Steam" v-if="profile.steam" :link="`https://steamcommunity.com/id/${profile.steam}`"/>
+          <SocialIcon type="Instagram" v-if="profile.instagram" :link="`https://www.instagram.com/${profile.instagram}`"/>
           <SocialIcon type="CodePen" v-if="profile.codepen" :link="`https://codepen.io/${profile.codepen}`"/>
           <SocialIcon type="LinkedIn" v-if="profile.linkedin" :link="`https://www.linkedin.com/in/${profile.linkedin}`"/>
         </footer>

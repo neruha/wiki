@@ -11,9 +11,9 @@ const SOCIAL_ICON_CLASS_MAP = {
   GitHub: 'fa-github',
   Twitter: 'fa-twitter',
   LinkedIn: 'fa-linkedin-square',
-  YouTube: 'fab fa-youtube',
+  YouTube: 'fa-youtube',
   Facebook: 'fa-facebook-square',
-  Steam: 'fa fa-steam',
+  Steam: 'fa-steam',
   Instagram: 'fa-instagram',
   CodePen: 'fa-codepen',
   Medium: 'fa-medium'

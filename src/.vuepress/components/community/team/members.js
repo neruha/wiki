@@ -74,6 +74,8 @@ const members = [
       description: `自称プロ建築地の人（無能とか言わんといてね）`,
       languages: ['jp'],
       minecraft_uuid: '4d18bbdf19c34efe9524133e1c11dd09',
+      twitter: '7gY0vPUE01MuYjb',
+      instagram: 'kakip1107',
       work: {
         role: ['接客', '建築'],
         org: 'ミニゲーム'

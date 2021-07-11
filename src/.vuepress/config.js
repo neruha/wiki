@@ -22,7 +22,8 @@ const sidebar = {
       title: 'ルール',
       collapsable: false,
       children: [
-        '/rule/server-rule'
+        '/rule/server-rule',
+        '/rule/op-rule'
       ]
     }
   ]
@@ -176,7 +177,7 @@ module.exports = {
     [
       '@vuepress/google-analytics',
       {
-        'ga': 'GTM-TL3D6H6'
+        'ga': 'UA-278792693'
       }
     ],
     [
