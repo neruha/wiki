@@ -5,6 +5,6 @@
 - [利用規約](/rule/application-config.html)
 - [サーバールール](/rule/server-rule.html)
 - [コミュニティルール](/rule/global-api.html)
-- [運営規約](/rule/options-api.html)
+- [運営規約](/rule/op-rule.html)
 - [寄付に関する注意](/rule/instance-properties.html)
 - [プライバシーポリシー](/rule/instance-methods.html)
