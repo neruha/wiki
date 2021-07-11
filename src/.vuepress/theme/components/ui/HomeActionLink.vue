@@ -141,7 +141,7 @@ a {
 
   &.grey {
     background-color: #f6f6f6;
-    color: #4f5959;
+    color: #5865F2;
     border-color: #f6f6f6;
 
     i.icon {

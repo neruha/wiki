@@ -32,14 +32,14 @@ module.exports = {
         rel: 'stylesheet'
       }
     ],
-    [
-      'link',
-      {
-        href:
-          'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css',
-        rel: 'stylesheet'
-      }
-    ],
+    // [
+    //   'link',
+    //   {
+    //     href:
+    //       'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css',
+    //     rel: 'stylesheet'
+    //   }
+    // ],
     [
       'link',
       {
@@ -80,6 +80,13 @@ module.exports = {
         src: 'https://extend.vimeocdn.com/ga/72160148.js',
         defer: 'defer'
       }
+    ],
+    [
+      'script',
+      {
+        src: 'https://kit.fontawesome.com/a8ef6e6b86.js',
+        crossorigin: 'anonymous'
+      }
     ]
   ],
   themeConfig: {
@@ -105,33 +112,11 @@ module.exports = {
       },
       {
         text: 'ルール',
-        link: '/rules/'
+        link: '/rule/'
       },
       {
-        text: 'サーバーについて',
-        ariaLabel: 'マインクラフトのサーバー',
-        items: [
-          {
-            text: '生活鯖',
-            link: '/server/seikatsu'
-          },
-          {
-            text: 'ライフ鯖',
-            link: '/server/life'
-          },
-          {
-            text: 'ミニゲーム鯖',
-            link: '/server/minigame'
-          },
-          {
-            text: 'RTM鯖',
-            link: '/server/rtm'
-          },
-          {
-            text: '青鬼ごっこ鯖',
-            link: '/server/aooni'
-          }
-        ]
+        text: 'サーバー一覧',
+        link: '/server/'
       },
       {
         text: '運営チーム',
@@ -139,10 +124,10 @@ module.exports = {
       },
       {
         text: 'はと鯖を支援する！',
-        link: '/guide/introduction'
+        link: '/support-hatosaba/donations'
       }
     ],
-    repo: 'Elic0de/hatowiki',
+    repo: 'hatosaba/wiki',
     docsBranch: 'main',
     editLinks: true,
     editLinkText: 'GitHubで編集する!',

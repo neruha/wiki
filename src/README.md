@@ -9,10 +9,10 @@ actionButtons:
     icon: fa fa-play-circle
   - text: 参加する！
     link: /guide/introduction
-  - text: GitHub
-    link: https://github.com/hatosaba
-    extraClass: github grey
-    icon: fa fa-github
+  - text: Discord
+    link: https://discord.gg/zf9G4UY
+    extraClass: discord grey
+    icon: fab fa-discord
     target: _blank
 features:
   - title: いろいろな遊び見つかる！

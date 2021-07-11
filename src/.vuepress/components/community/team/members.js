@@ -3,13 +3,14 @@ import { shuffle } from 'lodash'
 const members = [
   {
     name: 'hato810424',
-    description: 'オーナーだよ～',
+    description: `鯖主でーす、気軽に声かけてね`,
     languages: ['jp'],
     github: 'hato810424',
     twitter: 'hato810424',
     minecraft_uuid: '6b80409a32964d6e8614da041c5ec185',
     work: {
-      role: '管理者'
+      role: '鯖主',
+      org: 'サーバーインフラ'
     }
   }
 ].concat(
@@ -21,16 +22,19 @@ const members = [
       minecraft_uuid: '9cd931f107f9490ca64e27b6e5644ae8',
       work: {
         role: '開発者',
-        org: 'プラグイン'
+        org: ['プラグイン','サーバーインフラ']
       }
     },
     {
       name: 'karaagemorimori',
+      description: `揚げ物大好きwikiを作れる`,
       languages: ['jp'],
       minecraft_uuid: '83fd8656d10744ebb79a0a8e5d58abd5',
       github: 'karaagemorimori',
+      twitter: 'karamori_Micra',
       work: {
-        role: '接客'
+        role: ['接客', '広報', '建築', 'wiki部'],
+        org: '?'
       }
     },
     {
@@ -38,7 +42,7 @@ const members = [
       languages: ['jp'],
       minecraft_uuid: 'ce9b3c107dd6421caa4e5c0c5eb98bb5',
       work: {
-        role: '接客'
+        role: 'コマンド'
       }
     },
     {
@@ -46,32 +50,38 @@ const members = [
       languages: ['jp'],
       minecraft_uuid: 'b0f09277201846aeb63c039d6e9be2be',
       work: {
-        role: '接客'
+        role: ['接客', '対応'],
+        org: '?'
       }
     },
     {
       name: 'frosch_y',
+      description: `26%洗剤の人　イベントとかやっている自称アスレ勢`,
       languages: ['jp'],
       youtube: 'UC8pCIVFqNezdRAtitGBLUbg',
       minecraft_uuid: 'e98ec65ea77b40ceb46ba6e9e22f6fd6',
       work: {
-        role: '接客'
+        role: ['コマンド', '建築'],
+        org: 'イベント'
       }
     },
     {
       name: 'kakiP1107',
+      description: `自称プロ建築地の人（無能とか言わんといてね）`,
       languages: ['jp'],
       minecraft_uuid: '4d18bbdf19c34efe9524133e1c11dd09',
       work: {
-        role: '接客'
+        role: ['接客', '建築'],
+        org: 'ミニゲーム'
       }
     },
     {
       name: 'doudai',
+      description: `なんか運営にされた人暇なときに監視してる悪事をするとお仕置きよ`,
       languages: ['jp'],
       minecraft_uuid: 'abf88b94efaf4ae093593577be486dc4',
       work: {
-        role: '接客'
+        role: 'プラグイン開発者'
       }
     }
   ])
