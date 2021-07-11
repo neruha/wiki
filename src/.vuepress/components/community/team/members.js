@@ -7,6 +7,8 @@ const members = [
     languages: ['jp'],
     github: 'hato810424',
     twitter: 'hato810424',
+    youtube: 'UCIqGVfoI2XKqF5hEFRkLRsQ',
+    steam: 'hato810424',
     minecraft_uuid: '6b80409a32964d6e8614da041c5ec185',
     work: {
       role: '鯖主',
@@ -32,6 +34,8 @@ const members = [
       minecraft_uuid: '83fd8656d10744ebb79a0a8e5d58abd5',
       github: 'karaagemorimori',
       twitter: 'karamori_Micra',
+      youtube: 'UC8ILPa6jylLWEXHmnhDAssw',
+      steam: '76561198879854511',
       work: {
         role: ['接客', '広報', '建築', 'wiki部'],
         org: '?'
@@ -79,6 +83,7 @@ const members = [
       name: 'doudai',
       description: `なんか運営にされた人暇なときに監視してる悪事をするとお仕置きよ`,
       languages: ['jp'],
+      twitter: 'doudai9',
       minecraft_uuid: 'abf88b94efaf4ae093593577be486dc4',
       work: {
         role: 'プラグイン開発者'

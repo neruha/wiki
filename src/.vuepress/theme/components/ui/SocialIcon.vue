@@ -11,8 +11,9 @@ const SOCIAL_ICON_CLASS_MAP = {
   GitHub: 'fa-github',
   Twitter: 'fa-twitter',
   LinkedIn: 'fa-linkedin-square',
-  YouTube: 'fa-youtube-square',
+  YouTube: 'fab fa-youtube',
   Facebook: 'fa-facebook-square',
+  Steam: 'fa fa-steam',
   Instagram: 'fa-instagram',
   CodePen: 'fa-codepen',
   Medium: 'fa-medium'
@@ -47,6 +48,7 @@ export default {
 <style lang="scss" scoped>
 .fa {
   &-github,
+  &-steam,
   &-codepen,
   &-envelope {
     color: #000;

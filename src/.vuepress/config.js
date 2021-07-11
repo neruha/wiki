@@ -16,6 +16,15 @@ const sidebar = {
         '/guide/contributing/doc-style-guide'
       ]
     }
+  ],
+  rule: [
+    {
+      title: 'ルール',
+      collapsable: false,
+      children: [
+        '/rule/server-rule'
+      ]
+    }
   ]
 }
 
@@ -137,7 +146,8 @@ module.exports = {
     sidebar: {
       collapsable: false,
       '/guide/contributing/': sidebar.contributing,
-      '/guide/': sidebar.guide
+      '/guide/': sidebar.guide,
+      '/rule/': sidebar.rule
     },
     smoothScroll: false,
     algolia: {
