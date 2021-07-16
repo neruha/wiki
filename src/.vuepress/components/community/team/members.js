@@ -83,8 +83,8 @@ const members = [
     },
     {
       name: 'yohane',
-      description: '新人',
-      github: 'Yohane27',
+      description: 'ヨハネです。困ったことがありましたら気軽にお声がけください！',
+      github: 'Yohane0227',
       twitter: 'Yohane27_',
       steam: 'yohane1636',
       youtube: 'Yohane',
