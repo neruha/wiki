@@ -91,7 +91,7 @@ const members = [
       languages: ['jp'],
       minecraft_uuid: '878178de06834b22b50d06088f13efc2',
       work: {
-        role: '接客'
+        role: ['接客', 'サポータ']
       }
     },
     {
