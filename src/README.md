@@ -1,13 +1,9 @@
 ---
 home: true
 heroImage: https://crafatar.com/renders/head/6b80409a32964d6e8614da041c5ec185
-<<<<<<< HEAD
 heroText: hatosaba.f5.si
-tagline: みんなの<br>「楽しい」を提供しませんか
-=======
-heroText: HATOSABA
 tagline: はと鯖で<br>いろいろな<br>  遊び見つけませんか？！
->>>>>>> 9b27885f05fc29041ecbbc38da619f215540634d
+
 actionButtons:
   - text: はと鯖とは？
     link: /
