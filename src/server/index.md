@@ -6,7 +6,7 @@ sidebar: auto
 
 はと鯖のサーバー一覧です
 
-## [ライフ](/server/life.html)
+## [ライフ(life鯖)](/server/life.html)
 
 参加可能バージョン `1.17～`
 
@@ -14,18 +14,18 @@ sidebar: auto
 自分たちが創り上げていく生活鯖
 みんな次第で最高のサーバーに！
 
-## [生活](/server/seikatsu.html)
+## [生活(seikatu鯖)](/server/seikatsu.html)
 
 参加可能バージョン `1.12.2～`
 
 様々な遊び方ができる
 新しい生活サーバーです！
 
-## [ミニゲーム](/server/minigame.html)
+## [ミニゲーム(minigame鯖)](/server/minigame.html)
 
 参加可能バージョン `1.12.2～`
 
-## [RTM](/server/rtm.html)
+## [RTM(rtm鯖)](/server/rtm.html)
 
 参加可能バージョン `1.12.2～`
 

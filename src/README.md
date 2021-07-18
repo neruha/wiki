@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: https://crafatar.com/renders/head/6b80409a32964d6e8614da041c5ec185
-heroText: HATOSABA
+heroText: hatosaba.f5.si
 tagline: みんなの<br>「楽しい」を提供しませんか
 actionButtons:
   - text: hato鯖ってなんなのさ?
