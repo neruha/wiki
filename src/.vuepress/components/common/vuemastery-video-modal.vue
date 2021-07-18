@@ -6,7 +6,7 @@
         style="padding: 56.25% 0 0 0; position: relative;"
       >
         <iframe
-          src="https://player.vimeo.com/video/455611549?dnt=1"
+          src="https://player.vimeo.com/video/576282844?dnt=1"
           style="height: 100%; left: 0; position: absolute; top: 0; width: 100%; margin: 0"
           frameborder="0"
           webkitallowfullscreen
@@ -17,7 +17,7 @@
         ></iframe>
       </div>
 
-      <p class="modal-text">
+      <!-- <p class="modal-text">
         Video by
         <a
           href="https://www.vuemastery.com"
@@ -33,7 +33,7 @@
           title="Vue.js Courses on Vue Mastery"
           >Intro to Vue course</a
         >.
-      </p>
+      </p> -->
     </div>
   </div>
 </template>
