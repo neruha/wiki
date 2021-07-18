@@ -21,9 +21,11 @@
     </Sidebar>
 
     <Home v-if="$page.frontmatter.home" />
+    <PlayerOnline v-if="$page.frontmatter.home" />
 
     <Page v-else :sidebar-items="sidebarItems">
       <template #top>
+        
         <CarbonAds
           v-if="adsConfig"
           :key="'ca:' + $page.path"
@@ -52,6 +54,7 @@ import Page from '@theme/components/Page.vue'
 import Sidebar from '@theme/components/Sidebar.vue'
 import BuySellAds from '@theme/components/BuySellAds.vue'
 import CarbonAds from '@theme/components/CarbonAds.vue'
+import PlayerOnline from '@theme/components/PlayerOnline.vue'
 import BannerTop from '@theme/components/BannerTop.vue'
 import { resolveSidebarItems } from '../util'
 
@@ -65,7 +68,8 @@ export default {
     Navbar,
     BannerTop,
     BuySellAds,
-    CarbonAds
+    CarbonAds,
+    PlayerOnline
   },
 
   data() {

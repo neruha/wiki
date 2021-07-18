@@ -1,17 +1,23 @@
 ---
 home: true
 heroImage: https://crafatar.com/renders/head/6b80409a32964d6e8614da041c5ec185
+<<<<<<< HEAD
 heroText: hatosaba.f5.si
 tagline: みんなの<br>「楽しい」を提供しませんか
+=======
+heroText: HATOSABA
+tagline: はと鯖で<br>いろいろな<br>  遊び見つけませんか？！
+>>>>>>> 9b27885f05fc29041ecbbc38da619f215540634d
 actionButtons:
-  - text: hato鯖ってなんなのさ?
+  - text: はと鯖とは？
     link: /
+    extraClass: vuemastery-trigger primary
     icon: fa fa-play-circle
-  - text: 参加する！
+  - text: hatosaba.f5.si に参加する！
     link: /guide/introduction
-  - text: Discord
+  - text: DISCORD
     link: https://discord.gg/zf9G4UY
-    extraClass: discord grey
+    extraClass: discord blueple
     icon: fab fa-discord
     target: _blank
 features:
@@ -30,3 +36,5 @@ socialIcons:
   - type: Twitter
     link: https://twitter.com/hatoiroiro
 ---
+
+<common-vuemastery-video-modal/>

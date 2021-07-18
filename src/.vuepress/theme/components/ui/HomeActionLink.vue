@@ -141,6 +141,16 @@ a {
 
   &.grey {
     background-color: #f6f6f6;
+    color: #4f5959;
+    border-color: #f6f6f6;
+
+    i.icon {
+      opacity: 0.7; // wash out a bit to reduce contrast
+    }
+  }
+
+  &.blueple {
+    background-color: #f6f6f6;
     color: #5865F2;
     border-color: #f6f6f6;
 

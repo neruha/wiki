@@ -31,7 +31,7 @@ const sidebar = {
 
 module.exports = {
   title: 'はと鯖　公式ウィキサイト',
-  description: 'はと鯖 - みんなの「楽しい」を提供しませんか',
+  description: 'はと鯖 - いろいろな遊び見つかる',
   lang: 'ja-jp',
   head: [
     [
@@ -147,15 +147,9 @@ module.exports = {
     sidebar: {
       collapsable: false,
       '/guide/contributing/': sidebar.contributing,
-      '/guide/': sidebar.guide,
       '/rule/': sidebar.rule
     },
     smoothScroll: false,
-    algolia: {
-      indexName: 'vuejs-v3',
-      appId: 'BH4D9OD16A',
-      apiKey: 'bc6e8acb44ed4179c30d0a45d6140d3f'
-    },
     // carbonAds: {
     //   carbon: 'CEBDT27Y',
     //   custom: 'CKYD62QM',
