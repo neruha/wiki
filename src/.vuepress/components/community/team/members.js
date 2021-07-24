@@ -104,6 +104,14 @@ const members = [
       work: {
         role: 'プラグイン開発者'
       }
+    },
+    {
+      name: 'more5804',
+      languages: ['jp'],
+      minecraft_uuid: '65d9cc294ea44acb8278b477227cb8e9',
+      work: {
+        role: '接客'
+      }
     }
   ])
 )
