@@ -112,6 +112,15 @@ const members = [
       work: {
         role: '接客'
       }
+    },
+    {
+      name: 'penkun0286',
+      languages: ['jp'],
+      minecraft_uuid: '265b3a3c23114651b9eb11f21e16d495',
+      work: {
+        role: ['建築', '接客', 'コマンド'],
+        org: '?'
+      }
     }
   ])
 )
