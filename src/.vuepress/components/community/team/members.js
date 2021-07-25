@@ -121,6 +121,15 @@ const members = [
         role: ['建築', '接客', 'コマンド'],
         org: '?'
       }
+    },
+    {
+      name: 'lirulinp',
+      languages: ['jp'],
+      minecraft_uuid: '4fecf821edaf4657970c4b7c49ebbc46',
+      work: {
+        role: ['接客', 'プラグイン', 'サーバーインフラ'],
+        org: '?'
+      }
     }
   ])
 )
