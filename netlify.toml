@@ -13,6 +13,9 @@
 [[redirects]]
   from = "/api/"
   to = "https://aiu.hatosaba.f5.si/"
+  status = 200
+  force = true
+  headers = {X-From = "Netlify"}
 
 [[redirects]]
   from = "/mojang"
