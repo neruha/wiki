@@ -117,6 +117,10 @@ module.exports = {
           {
             text: 'コントリビュート',
             link: '/guide/contributing/doc-style-guide'
+          },
+          {
+            text: 'リーダーボード',
+            link: '/leaderboards/playerpoints'
           }
         ]
       },
@@ -164,6 +168,11 @@ module.exports = {
         target: "https://sessionserver.mojang.com/session/minecraft/profile",
         changeOrigin: true,
         pathRewrite: {'^/mojang/': ''},
+      },
+      '/api/': {
+        target: "https://aiu.hatosaba.f5.si",
+        changeOrigin: true,
+        pathRewrite: {'^/api/': ''},
       }
     }
   },

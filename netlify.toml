@@ -11,6 +11,10 @@
   to = "/guide/contributing/writing-guide.html"
 
 [[redirects]]
+  from = "/api/"
+  to = "https://aiu.hatosaba.f5.si/"
+
+[[redirects]]
   from = "/mojang"
   to = "https://sessionserver.mojang.com/session/minecraft/profile/:uuid"
   status = 200

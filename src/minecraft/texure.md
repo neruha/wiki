@@ -1,3 +1,0 @@
-# テスクチャ
-
-<minecraft-index/>

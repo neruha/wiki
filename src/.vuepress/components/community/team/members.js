@@ -11,8 +11,8 @@ const members = [
     steam: 'hato810424',
     minecraft_uuid: '6b80409a32964d6e8614da041c5ec185',
     work: {
-      role: '鯖主',
-      org: 'サーバーインフラ'
+      role: 'サーバーインフラ',
+      org: '最高責任者'
     }
   }
 ].concat(
@@ -23,8 +23,8 @@ const members = [
       github: 'Elic0de',
       minecraft_uuid: '9cd931f107f9490ca64e27b6e5644ae8',
       work: {
-        role: '開発者',
-        org: ['プラグイン','サーバーインフラ']
+        role: 'プラグイン開発,サーバーインフラ',
+        org: '上級管理者'
       }
     },
     {
@@ -38,7 +38,7 @@ const members = [
       steam: '76561198879854511',
       work: {
         role: ['接客', '広報', '建築', 'wiki部'],
-        org: '?'
+        org: '生活鯖鯖主'
       }
     },
     {
@@ -119,7 +119,7 @@ const members = [
       minecraft_uuid: '4fecf821edaf4657970c4b7c49ebbc46',
       work: {
         role: ['接客', 'プラグイン', 'サーバーインフラ'],
-        org: '?'
+        org: '開発者'
       }
     }
   ])
