@@ -117,10 +117,6 @@ module.exports = {
           {
             text: 'コントリビュート',
             link: '/guide/contributing/doc-style-guide'
-          },
-          {
-            text: 'リーダーボード',
-            link: '/leaderboards/playerpoints'
           }
         ]
       },
@@ -131,6 +127,10 @@ module.exports = {
       {
         text: 'サーバー一覧',
         link: '/server/'
+      },
+      {
+        text: 'リーダーボード',
+        link: '/leaderboards/playerpoints'
       },
       {
         text: '運営チーム',
