@@ -8,6 +8,7 @@
     <td>
       <img :src="`https://crafatar.com/avatars/${profile.uuid}?size=16`"/><span style="display:inline-block;line-height:16px;">{{ profile.playername }}</span>
     </td>
+    <td>{{ profile.weekly }}</td>
     <td>{{ profile.total }}</td>
   </tr>
 </template>
