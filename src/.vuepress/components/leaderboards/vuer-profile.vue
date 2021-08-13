@@ -16,13 +16,6 @@
 import axios from "axios"
 
 export default {
-
-  data () {
-    return {
-      info: null
-    }
-  },
-
   props: {
     profile: Object
   }
