@@ -6,6 +6,7 @@
         <th>プレイヤー名</th>
         <th>週間投票数</th>
         <th>最高週間投票数</th>
+        <th>合計</th>
       </tr>
     </thead>
     <tbody>
@@ -31,7 +32,7 @@ export default {
 
   mounted () {
       axios
-      .get(`/api`)
+      .get(`/api/`)
       .then(response => (this.info = response.data))  
   },
 }

@@ -9,6 +9,7 @@
       <img :src="`https://crafatar.com/avatars/${profile.uuid}?size=16`"/><span style="display:inline-block;line-height:16px;">{{ profile.playername }}</span>
     </td>
     <td>{{ profile.weekly }}</td>
+    <td>{{ profile.highest }}</td>
     <td>{{ profile.total }}</td>
   </tr>
 </template>
@@ -51,9 +52,18 @@ table tr td:nth-child(3) {
     text-indent: 1px;
 }
 
-table tr td:last-child {
+table tr td:nth-child(4) {
     text-align: right;
     padding-right: 30px;
+    font-weight: 900;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-indent: 1px;
+}
+
+table tr td:last-child {
+    text-align: right;
+    padding-left: 30px;
     font-weight: 900;
     font-size: 14px;
     letter-spacing: 1px;
