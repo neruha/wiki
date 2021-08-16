@@ -121,6 +121,15 @@ const members = [
         role: ['接客', 'プラグイン', 'サーバーインフラ'],
         org: '開発者'
       }
+    },
+    {
+      name: 'CleanestQuill89',
+      languages: ['jp'],
+      minecraft_uuid: '10df97fbae094e7490f4e7f26b998b12',
+      work: {
+        role: ['接客', '建築'],
+        org: '青鬼鯖鯖主'
+      }
     }
   ])
 )
