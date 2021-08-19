@@ -28,6 +28,8 @@
     "lodash": "^4.17.15",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
+    "swiper": "^6.8.2",
+    "vue-awesome-swiper": "^4.1.1",
     "vuepress-plugin-container": "^2.0.2",
     "vuepress-plugin-smooth-scroll": "^0.0.3"
   },
