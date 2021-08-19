@@ -55,6 +55,7 @@ import Sidebar from '@theme/components/Sidebar.vue'
 import BuySellAds from '@theme/components/BuySellAds.vue'
 import CarbonAds from '@theme/components/CarbonAds.vue'
 import PlayerOnline from '@theme/components/PlayerOnline.vue'
+import Swiper from '@theme/components/Swiper.vue'
 import BannerTop from '@theme/components/BannerTop.vue'
 import { resolveSidebarItems } from '../util'
 

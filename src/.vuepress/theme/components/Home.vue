@@ -35,7 +35,15 @@
       </div>
     </section>
 
+    <Swiper />
+
     <Content class="theme-default-content custom" />
+
+    <section class="section-members" :class="{ active: membersActive }" ref="members">
+      <div class="inner">
+        <StaffMembers :members="members" />
+      </div>
+    </section>
 
     <!-- <section class="section-newsletter">
       <Newsletter />
@@ -57,21 +65,26 @@
 </template>
 
 <script>
+import members from '@theme/data/staff-members.js'
+import StaffMembers from '@theme/components/members/StaffMembers.vue'
 import HomeActionLink from '@theme/components/ui/HomeActionLink.vue'
 import SocialIcon from '@theme/components/ui/SocialIcon.vue'
 import Newsletter from '@theme/components/Newsletter.vue'
+import Swiper from '@theme/components/Swiper.vue'
 
 export default {
   components: {
     HomeActionLink,
     SocialIcon,
-    Newsletter
+    Newsletter,
+    StaffMembers,
+    Swiper
   },
 
-  // data: () => ({
-  //   sponsors,
-  //   sponsorsActive: false
-  // }),
+  data: () => ({
+    members,
+    membersActive: false
+  }),
 
   computed: {
     data() {
@@ -97,9 +110,9 @@ export default {
 
   methods: {
     onPageScroll() {
-      const sponsorTop = this.$refs.sponsors.offsetTop
+      const memberTop = this.$refs.members.offsetTop
 
-      this.sponsorsActive = window.pageYOffset > sponsorTop - 100
+      this.membersActive = window.pageYOffset > memberTop - 100
     }
   }
 }
@@ -240,7 +253,7 @@ export default {
   }
 }
 
-.section-sponsors {
+.section-members {
   background: #f6f6f6;
   text-align: center;
   padding: 35px 40px 45px;
@@ -257,7 +270,7 @@ export default {
     margin: 0 auto;
   }
 
-  .sponsors + .sponsors {
+  .members + .members {
     margin-top: 5rem;
   }
 
