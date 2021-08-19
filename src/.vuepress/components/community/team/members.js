@@ -130,6 +130,14 @@ const members = [
         role: ['接客', '建築'],
         org: '青鬼鯖鯖主'
       }
+    },
+    {
+      name: 'Genkiyade',
+      languages: ['jp'],
+      minecraft_uuid: 'c2c5071f71574930918473d49e8417bb',
+      work: {
+        role: ['広報'],
+      }
     }
   ])
 )

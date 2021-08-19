@@ -49,6 +49,10 @@ export default {
       {
         "img": "10df97fbae094e7490f4e7f26b998b12",
         "name": "CleanestQuill89"
+      },
+      {
+        "img": "c2c5071f71574930918473d49e8417bb",
+        "name": "Genkiyade"
       }
     ]
   }
