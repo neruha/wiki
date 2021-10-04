@@ -146,7 +146,15 @@ const members = [
       work: {
         role: '接客',
       }
+    },
+    
+    name: 'rainbowfishzzz',
+    languages: ['jp'],
+    minecraft_uuid: '8439a93c40c048b5be1d7d4b3dd42f38',
+    work: {
+      role: '接客',
     }
+  }
   ])
 )
 
