@@ -10,19 +10,26 @@
       </tr>
     </thead>
     <tbody>
-      <tr  v-for="(value, key) in merged" :key="key">
-        <td>
-          <div>
-            {{ value.rank }}
-          </div>
+      <template v-if="showLoadButton">
+        <td colspan="5" :rowspan="merged.length" class="load-cell">
+          <button @click="load">{{ "読み込む" }}</button>
         </td>
-        <td>
-          <img :src="`https://crafatar.com/avatars/${value.uuid}?size=16`"/><span style="display:inline-block;line-height:16px;">{{ value.playername }}</span>
-        </td>
-        <td>{{ value.weekly }}</td>
-        <td>{{ value.highest }}</td>
-        <td>{{ value.total }}</td>
-      </tr>
+      </template>
+      <template v-else>
+        <tr  v-for="(value, key) in merged" :key="key">
+          <td>
+            <div>
+              {{ value.rank }}
+            </div>
+          </td>
+          <td>
+            <img :src="`https://mc-heads.net/avatar/${value.uuid}`"/><span style="display:inline-block;line-height:16px;">{{ value.playername }}</span>
+          </td>
+          <td>{{ value.weekly }}</td>
+          <td>{{ value.highest }}</td>
+          <td>{{ value.total }}</td>
+        </tr>
+      </template>
     </tbody>
   </table>
 </template>
@@ -41,6 +48,7 @@ export default {
     const dates = {}
 
     return {
+      showLoadButton: true,
       dates,
     }
   },
@@ -53,24 +61,25 @@ export default {
 
   mounted () {
     let stats = null
-
+    
     try {
       stats = JSON.parse(sessionStorage.getItem('leaderboard-stats'))
     } catch {
     }
     
     if (!stats) {
-      this.load()
       return
     }
 
     const { dates } = stats
 
     this.dates = dates
+    this.showLoadButton = false
   },
 
   methods: {
     async load () {
+      this.showLoadButton = false
       await this.loadDate()
       this.saveStats()
     },
@@ -101,6 +110,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "@theme/styles/_settings.scss";
+
 table{
   border-collapse: collapse;
   border-spacing: 0;
@@ -239,4 +250,23 @@ table tbody tr:nth-child(3) td:first-child div {
     box-shadow: inset 0px 0px 0px 1px rgb(0 0 0 / 19%), inset 0 0 0 2px rgb(255 255 255 / 19%);
 }
 
+.load-cell {
+  background: #f6f8fa;
+  text-align: center;
+  button {
+    padding: 4px 20px;
+    height: 50px;
+    border-radius: 9999px;
+    font-size: 1.05em;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    min-width: 8em;
+    color: #fff;
+    background-color: $green;
+    box-sizing: border-box;
+    border: 1px solid currentColor;
+    appearance: none;
+    cursor: pointer;
+  }
+}
 </style>
