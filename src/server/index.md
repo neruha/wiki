@@ -6,6 +6,17 @@ sidebar: auto
 
 はと鯖のサーバー一覧です
 
+## [FFA鯖](/server/ffa.html)
+
+参加可能バージョン `1.8.9～`
+
+某有名サーバーの
+UHCのKITが使えます！！
+
+詳細は [こちら](/server/ffa.html) から
+
+![](https://cdn.discordapp.com/attachments/397315421578985493/878906775393419314/unknown.png)
+
 ## [ライフ(life鯖)](/server/life.html)
 
 参加可能バージョン `1.17～`

@@ -10,31 +10,93 @@
       </tr>
     </thead>
     <tbody>
-      <VuerProfile v-for="profile in info" :key="profile.name" :profile="profile"/>
+      <tr  v-for="(value, key) in merged" :key="key">
+        <td>
+          <div>
+            {{ value.rank }}
+          </div>
+        </td>
+        <td>
+          <img :src="`https://crafatar.com/avatars/${value.uuid}?size=16`"/><span style="display:inline-block;line-height:16px;">{{ value.playername }}</span>
+        </td>
+        <td>{{ value.weekly }}</td>
+        <td>{{ value.highest }}</td>
+        <td>{{ value.total }}</td>
+      </tr>
     </tbody>
   </table>
 </template>
 
 
 <script>
-import axios from "axios"
+
+const getDate = async () => {
+  const response = await fetch("/api")
+  const data = await response.json()
+  return data
+} 
 
 export default {
-  components: {
-    VuerProfile: () => import('./vuer-profile')
+  data () {
+    const dates = {}
+
+    return {
+      dates,
+    }
   },
 
-  data () {
-    return {
-      info: null
+  computed: {
+    merged () {
+      return this.dates
     }
   },
 
   mounted () {
-      axios
-      .get(`/api`)
-      .then(response => (this.info = response.data))  
+    let stats = null
+
+    try {
+      stats = JSON.parse(sessionStorage.getItem('leaderboard-stats'))
+    } catch {
+    }
+    
+    if (!stats) {
+      this.load()
+      return
+    }
+
+    const { dates } = stats
+
+    this.dates = dates
   },
+
+  methods: {
+    async load () {
+      await this.loadDate()
+      this.saveStats()
+    },
+
+    async loadDate () {
+      this.dates = "読み込み中"
+
+      let date = '-'
+
+      try {
+        date = await getDate()
+      } catch {
+      }
+
+      this.dates = date
+    },
+
+    saveStats () {
+      const data = {
+        dates: this.dates
+      }
+
+      // limits request rates, so we store the stats in sessionStorage
+      sessionStorage.setItem('leaderboard-stats', JSON.stringify(data))
+    }
+  }
 }
 </script>
 
@@ -66,6 +128,115 @@ table th {
 table tr td:first-child, table tr td:last-child {
     font-weight: 900;
     color: #8F8F8F;
+}
+
+table td{
+  text-align: center;
+  width: 25%;
+  padding: 5px;
+  font-weight: 900;
+  color: #8F8F8F;
+}
+
+table tr td:first-child {
+    text-align: center;
+}
+
+table tr td:nth-child(2) {
+    text-align: left;
+}
+
+table tr td:nth-child(3) {
+    text-align: right;
+    padding-right: 30px;
+    font-weight: 900;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-indent: 1px;
+}
+
+table tr td:nth-child(4) {
+    text-align: right;
+    padding-right: 30px;
+    font-weight: 900;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-indent: 1px;
+}
+
+table tr td:last-child {
+    text-align: right;
+    padding-left: 30px;
+    font-weight: 900;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-indent: 1px;
+}
+
+table td.span{
+  display: inline-block;
+  line-height: 32px;
+}
+
+table img{
+  margin-right: 5px;
+  min-height: 16px;
+  min-width: 16px;
+  max-width: 16px;
+  max-height: 16px;
+  border-radius: 3px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+table tr td:first-child, table tr td:last-child {
+    font-weight: 900;
+    color: #8F8F8F;
+}
+
+table tbody tr:first-child td:first-child div {
+    color: white;
+    display: inline-block;
+    position: relative;
+    padding: 0.5px;
+    padding-bottom: 3.5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    line-height: 14px;
+    border-radius: 100%;
+    background-color: #fbc233;
+    text-shadow: 0 1px 0 rgb(0 0 0 / 19%);
+    box-shadow: inset 0px 0px 0px 1px rgb(0 0 0 / 19%), inset 0 0 0 2px rgb(255 255 255 / 19%);
+}
+
+table tbody tr:nth-child(2) td:first-child div {
+    color: white;
+    display: inline-block;
+    position: relative;
+    padding: 0.5px;
+    padding-bottom: 3px;
+    padding-right: 5px;
+    padding-left: 5px;
+    line-height: 14px;
+    border-radius: 100%;
+    background-color: #e2e2e4;
+    text-shadow: 0 1px 0 rgb(0 0 0 / 19%);
+    box-shadow: inset 0px 0px 0px 1px rgb(0 0 0 / 19%), inset 0 0 0 2px rgb(255 255 255 / 19%);
+}
+
+table tbody tr:nth-child(3) td:first-child div {
+    color: white;
+    display: inline-block;
+    position: relative;
+    padding: 0;
+    padding-bottom: 4px;
+    padding-right: 5px;
+    padding-left: 5px;
+    line-height: 14px;
+    border-radius: 100%;
+    background-color: #da7e4b;
+    text-shadow: 0 1px 0 rgb(0 0 0 / 19%);
+    box-shadow: inset 0px 0px 0px 1px rgb(0 0 0 / 19%), inset 0 0 0 2px rgb(255 255 255 / 19%);
 }
 
 </style>
