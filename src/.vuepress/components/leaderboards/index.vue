@@ -38,7 +38,7 @@
 <script>
 
 const getDate = async () => {
-  const response = await fetch("/api")
+  const response = await fetch("/api/")
   const data = await response.json()
   return data
 } 
@@ -61,7 +61,7 @@ export default {
 
   mounted () {
     let stats = null
-    
+
     try {
       stats = JSON.parse(sessionStorage.getItem('leaderboard-stats'))
     } catch {
