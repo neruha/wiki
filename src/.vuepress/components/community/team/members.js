@@ -136,9 +136,25 @@ const members = [
       languages: ['jp'],
       minecraft_uuid: 'c2c5071f71574930918473d49e8417bb',
       work: {
-        role: ['広報'],
+        role: '広報',
       }
+    },
+    {
+      name: 'reitan234',
+      languages: ['jp'],
+      minecraft_uuid: 'cb446eb6b06f4cc4a2b66a3aa815ff83',
+      work: {
+        role: '接客',
+      }
+    },
+    
+    name: 'rainbowfishzzz',
+    languages: ['jp'],
+    minecraft_uuid: '8439a93c40c048b5be1d7d4b3dd42f38',
+    work: {
+      role: '接客',
     }
+  }
   ])
 )
 
