@@ -8,7 +8,7 @@ sidebar: auto
 
 ## [FFA鯖](/server/ffa.html)
 
-参加可能バージョン `1.8.9～`
+参加可能バージョン `1.8.9`
 
 某有名サーバーの
 UHCのKITが使えます！！
@@ -17,7 +17,7 @@ UHCのKITが使えます！！
 
 ![](https://cdn.discordapp.com/attachments/397315421578985493/878906775393419314/unknown.png)
 
-## [ライフ(life鯖)](/server/life.html)
+## [ライフ](/server/life.html)
 
 参加可能バージョン `1.17～`
 
@@ -25,18 +25,7 @@ UHCのKITが使えます！！
 自分たちが創り上げていく生活鯖
 みんな次第で最高のサーバーに！
 
-## [生活(seikatu鯖)](/server/seikatsu.html)
-
-参加可能バージョン `1.12.2～`
-
-様々な遊び方ができる
-新しい生活サーバーです！
-
-## [ミニゲーム(minigame鯖)](/server/minigame.html)
-
-参加可能バージョン `1.12.2～`
-
-## [青鬼](/server/aooni.html)
+## [青鬼鯖](/server/aooni.html)
 
 参加可能バージョン `1.12.2～`
 
