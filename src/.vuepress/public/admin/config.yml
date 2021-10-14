@@ -1,0 +1,17 @@
+backend:
+  name: github
+  repo: hatosaba/wiki
+media_folder: "/media"
+public_folder: "../"
+publish_mode: editorial_workflow
+collections:
+  - label: "固定ページ"
+    name: "fixedPages"
+    folder: "docs"
+    create: true
+    fields:
+      - { label: "Home", name: "home", widget: "hidden", default: false }
+      - { label: "タイトル(新規記事は英語が良き)", name: "title", widget: "string" }
+      - { label: "説明", name: "description", widget: "string" }
+      - { label: "サイドバー", name: "sidebar", widget: "boolean", default: true }
+      - { label: "本文", name: "body", widget: "markdown" }
