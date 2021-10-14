@@ -114,15 +114,6 @@ const members = [
       }
     },
     {
-      name: 'lirulinp',
-      languages: ['jp'],
-      minecraft_uuid: '4fecf821edaf4657970c4b7c49ebbc46',
-      work: {
-        role: ['接客', 'プラグイン', 'サーバーインフラ'],
-        org: '開発者'
-      }
-    },
-    {
       name: 'CleanestQuill89',
       languages: ['jp'],
       minecraft_uuid: '10df97fbae094e7490f4e7f26b998b12',
