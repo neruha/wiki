@@ -21,8 +21,6 @@ features:
     details: ミニゲーム,生活,経済,RTM,整地などのいろいろなサーバーが楽しめます！
   - title: よいはと鯖ライフを！！！！！！！
     details: Discordではリアルタイムにサーバーの情報を配信したり、最新情報をいち早くゲットできたり、ほかのプレイヤーと交流したりできます。
-  - title: 生活サーバーを現在コツコツ準備しています！
-    details: 8月10日生活鯖オープン！花火大会、屋台も楽しめるイベントを準備しています！
 footer: |
   Released under the <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">MIT License</a><br>
   Copyright © 2014-2021 Evan You
