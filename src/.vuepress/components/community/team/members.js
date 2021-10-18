@@ -145,6 +145,15 @@ const members = [
       }
     },
     {
+      name: 'Yeahn'
+      languages: ['jp'],
+      twitter: 'yeahnmc',
+      minecraft_uuid: '2d048f12e93340e89dd8a7e9f95007aa',
+      work: {
+        role: '接客',
+      }
+    },
+    {
       name: 'Rui00831'
       languages: ['jp'],
       twitter: 'Rui00831',
