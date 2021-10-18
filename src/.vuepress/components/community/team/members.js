@@ -46,7 +46,7 @@ const members = [
       languages: ['jp'],
       minecraft_uuid: 'ce9b3c107dd6421caa4e5c0c5eb98bb5',
       work: {
-        role: 'コマンド'
+        role: '?'
       }
     },
     {
@@ -54,8 +54,7 @@ const members = [
       languages: ['jp'],
       minecraft_uuid: 'b0f09277201846aeb63c039d6e9be2be',
       work: {
-        role: ['接客', '対応'],
-        org: '?'
+        role: '?'
       }
     },
     {
@@ -66,7 +65,6 @@ const members = [
       minecraft_uuid: 'e98ec65ea77b40ceb46ba6e9e22f6fd6',
       work: {
         role: ['コマンド', '建築'],
-        org: 'イベント'
       }
     },
     {
@@ -77,8 +75,7 @@ const members = [
       twitter: '7gY0vPUE01MuYjb',
       instagram: 'kakip1107',
       work: {
-        role: ['接客', '建築'],
-        org: 'ミニゲーム'
+        role: '建築'
       }
     },
     {
@@ -91,8 +88,7 @@ const members = [
       languages: ['jp'],
       minecraft_uuid: '878178de06834b22b50d06088f13efc2',
       work: {
-        role: ['接客', 'サポーター'],
-        org: '?'
+        role: 'サポーター'
       }
     },
     {
@@ -102,7 +98,7 @@ const members = [
       twitter: 'doudai9',
       minecraft_uuid: 'abf88b94efaf4ae093593577be486dc4',
       work: {
-        role: 'プラグイン開発者'
+        role: '接客'
       }
     },
     {
@@ -118,8 +114,8 @@ const members = [
       languages: ['jp'],
       minecraft_uuid: '10df97fbae094e7490f4e7f26b998b12',
       work: {
-        role: ['接客', '建築'],
-        org: '青鬼鯖鯖主'
+        role: '建築',
+        org: '青鬼鯖-鯖主'
       }
     },
     {
@@ -128,11 +124,13 @@ const members = [
       minecraft_uuid: 'c2c5071f71574930918473d49e8417bb',
       work: {
         role: '広報',
+        org: 'FFA鯖-鯖主'
       }
     },
     {
       name: 'reitan234',
       languages: ['jp'],
+      twitter: 'lemon_tantan_',
       minecraft_uuid: 'cb446eb6b06f4cc4a2b66a3aa815ff83',
       work: {
         role: '接客',
@@ -142,6 +140,15 @@ const members = [
       name: 'rainbowfishzzz',
       languages: ['jp'],
       minecraft_uuid: '8439a93c40c048b5be1d7d4b3dd42f38',
+      work: {
+        role: '接客',
+      }
+    },
+    {
+      name: 'Rui00831'
+      languages: ['jp'],
+      twitter: 'Rui00831',
+      minecraft_uuid: '14965c9af1cf479685279ed30cb19722',
       work: {
         role: '接客',
       }
