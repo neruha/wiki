@@ -161,6 +161,15 @@ const members = [
       work: {
         role: '接客',
       }
+    },
+    {
+      name: 'ships3ATT'
+      languages: ['jp'],
+      twitter: 'freedom96718575',
+      minecraft_uuid: '39811cfb0fae457995f54f42ffba5363',
+      work: {
+        role: '接客',
+      }
     }
   ])
 )
