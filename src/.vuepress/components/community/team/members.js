@@ -170,6 +170,24 @@ const members = [
       work: {
         role: '接客',
       }
+    },
+    {
+      name: 'tsubu_sensei1021'
+      languages: ['jp'],
+      twitter: 'mc_minamikana',
+      minecraft_uuid: '2e229038a943426cb50fb34b86b03de8',
+      work: {
+        role: '接客',
+      }
+    },
+    {
+      name: 'Sou2014'
+      languages: ['jp'],
+      twitter: 'minecrafter_so',
+      minecraft_uuid: 'ac840433bf8e4c49b473adc8eba84e11',
+      work: {
+        role: '接客',
+      }
     }
   ])
 )
