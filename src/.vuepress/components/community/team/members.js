@@ -145,7 +145,7 @@ const members = [
       }
     },
     {
-      name: 'Yeahn'
+      name: 'Yeahn',
       languages: ['jp'],
       twitter: 'yeahnmc',
       minecraft_uuid: '2d048f12e93340e89dd8a7e9f95007aa',
@@ -154,7 +154,7 @@ const members = [
       }
     },
     {
-      name: 'Rui00831'
+      name: 'Rui00831',
       languages: ['jp'],
       twitter: 'Rui00831',
       minecraft_uuid: '14965c9af1cf479685279ed30cb19722',
@@ -163,7 +163,7 @@ const members = [
       }
     },
     {
-      name: 'ships3ATT'
+      name: 'ships3ATT',
       languages: ['jp'],
       twitter: 'freedom96718575',
       minecraft_uuid: '39811cfb0fae457995f54f42ffba5363',
@@ -172,7 +172,7 @@ const members = [
       }
     },
     {
-      name: 'tsubu_sensei1021'
+      name: 'tsubu_sensei1021',
       languages: ['jp'],
       twitter: 'mc_minamikana',
       minecraft_uuid: '2e229038a943426cb50fb34b86b03de8',
@@ -181,7 +181,7 @@ const members = [
       }
     },
     {
-      name: 'Sou2014'
+      name: 'Sou2014',
       languages: ['jp'],
       twitter: 'minecrafter_so',
       minecraft_uuid: 'ac840433bf8e4c49b473adc8eba84e11',
