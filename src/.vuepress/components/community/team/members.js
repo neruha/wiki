@@ -38,7 +38,7 @@ const members = [
       steam: '76561198879854511',
       work: {
         role: ['接客', '広報', '建築', 'wiki部'],
-        org: '生活鯖鯖主'
+        org: 'MCJR鯖-鯖主'
       }
     },
     {
@@ -64,7 +64,7 @@ const members = [
       youtube: 'UC8pCIVFqNezdRAtitGBLUbg',
       minecraft_uuid: 'e98ec65ea77b40ceb46ba6e9e22f6fd6',
       work: {
-        role: ['コマンド', '建築'],
+        role: 'コマンド',
       }
     },
     {
@@ -73,7 +73,6 @@ const members = [
       languages: ['jp'],
       minecraft_uuid: '4d18bbdf19c34efe9524133e1c11dd09',
       twitter: '7gY0vPUE01MuYjb',
-      instagram: 'kakip1107',
       work: {
         role: '建築'
       }
