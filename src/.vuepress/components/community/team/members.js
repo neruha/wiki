@@ -177,6 +177,7 @@ const members = [
       minecraft_uuid: '2e229038a943426cb50fb34b86b03de8',
       work: {
         role: '接客',
+        org: 'Life鯖-鯖主'
       }
     },
     {
